@@ -506,7 +506,9 @@ export interface ApiGalleryPhotoGalleryPhoto
       'api::gallery-photo.gallery-photo'
     > &
       Schema.Attribute.Private;
+    person: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    shoot: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
