@@ -41,6 +41,10 @@
     },
     "content": {
       "type": "blocks"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }
