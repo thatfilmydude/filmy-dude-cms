@@ -11,6 +11,7 @@
         upload: {},
         delete: {},
       },
+      sizeLimit: 50 * 1024 * 1024,
     },
   },
 });
