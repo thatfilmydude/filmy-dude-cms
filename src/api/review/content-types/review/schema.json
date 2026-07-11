@@ -45,6 +45,21 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "director": {
+      "type": "string"
+    },
+    "music": {
+      "type": "string"
+    },
+    "cast": {
+      "type": "string"
+    },
+    "release_date": {
+      "type": "date"
+    },
+    "trailerUrl": {
+      "type": "string"
     }
   }
 }

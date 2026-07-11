@@ -523,10 +523,12 @@ export interface ApiReviewReview extends Struct.CollectionTypeSchema {
   };
   attributes: {
     author: Schema.Attribute.String;
+    cast: Schema.Attribute.String;
     content: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    director: Schema.Attribute.String;
     duration: Schema.Attribute.String;
     excerpt: Schema.Attribute.Text;
     genre: Schema.Attribute.String;
@@ -536,11 +538,14 @@ export interface ApiReviewReview extends Struct.CollectionTypeSchema {
       'api::review.review'
     > &
       Schema.Attribute.Private;
+    music: Schema.Attribute.String;
     Poster: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     publishedAt: Schema.Attribute.DateTime;
     rating: Schema.Attribute.Decimal;
+    release_date: Schema.Attribute.Date;
     slug: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.String;
+    trailerUrl: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
