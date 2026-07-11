@@ -34,6 +34,12 @@
     },
     "credit": {
       "type": "string"
+    },
+    "person": {
+      "type": "string"
+    },
+    "shoot": {
+      "type": "string"
     }
   }
 }
